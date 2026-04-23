@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Align 13 MRSA assemblies against USA300 FPR3757 (NC_007793.1) with minimap2 asm5
+# Align 13 MRSA assemblies against USA300 FPR3757 (NC_007793.1) with minimap2
 # Requires: mrsa-align conda env (minimap2 2.30, samtools 1.23.1)
 # Usage: micromamba run -n mrsa-align bash scripts/align_assemblies.sh
 
@@ -15,9 +15,10 @@ if [[ ! -f "$REF" ]]; then
     samtools faidx "$REF"
 fi
 
-# Align each assembly
+# Align each assembly; asm10 used for all (more permissive, better breadth for divergent isolates)
+# Assemblies 11 and 12 are close USA300 relatives — asm5 would also work but asm10 is consistent
 for i in $(seq 1 13); do
-    minimap2 -ax asm5 -t 6 "$REF" "assemblies/assembly${i}.fasta.gz" \
+    minimap2 -ax asm10 -t 6 "$REF" "assemblies/assembly${i}.fasta.gz" \
         2> "logs/assembly${i}.mm2.log" \
     | samtools sort -@ 2 -o "alignments/assembly${i}.bam" -
     samtools index "alignments/assembly${i}.bam"

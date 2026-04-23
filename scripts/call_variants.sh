@@ -9,13 +9,8 @@ set -euo pipefail
 REF=reference/USA300_FPR3757.fasta
 mkdir -p variants
 
-# Assemblies 11 and 12 used asm5 (≥95% breadth); rest used asm10
 for i in $(seq 1 13); do
-    if [[ $i -eq 11 || $i -eq 12 ]]; then
-        bam="alignments/assembly${i}.bam"
-    else
-        bam="alignments/assembly${i}.asm10.bam"
-    fi
+    bam="alignments/assembly${i}.bam"
 
     bcftools mpileup -Ou -f "$REF" "$bam" \
         --min-MQ 30 --min-BQ 20 \
