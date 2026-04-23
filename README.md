@@ -1,2 +1,2 @@
 # MRSA-analysis
-MRSA isolate alignment against NCTC 8325 reference
+Alignment and variant calling for 13 MRSA assemblies against the USA300 FPR3757 reference (NC_007793.1).
