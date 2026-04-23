@@ -1,0 +1,14 @@
+sample	mapped_contigs	total_contigs	mean_depth	breadth_pct
+assembly1	176	177	0.92	91.70
+assembly2	161	161	0.89	89.22
+assembly3	172	172	0.90	90.38
+assembly4	172	172	0.91	91.33
+assembly5	182	182	0.89	89.05
+assembly6	176	176	0.92	92.19
+assembly7	170	170	0.90	90.06
+assembly8	164	164	0.91	90.69
+assembly9	169	170	0.93	92.43
+assembly10	192	192	0.91	91.20
+assembly11	25	25	0.96	96.16
+assembly12	16	16	0.95	95.34
+assembly13	175	175	0.92	91.64

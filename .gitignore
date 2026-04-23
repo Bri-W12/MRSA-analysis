@@ -1,0 +1,5 @@
+assemblies/
+reference/
+logs/
+alignments/*.bam
+alignments/*.bai

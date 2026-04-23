@@ -1,0 +1,14 @@
+sample	preset	snps	indels	total_variants	breadth_pct
+assembly1	asm10	21553	0	21553	91.70
+assembly2	asm10	20320	0	20320	89.22
+assembly3	asm10	21062	0	21062	90.38
+assembly4	asm10	18421	0	18421	91.33
+assembly5	asm10	18757	0	18757	89.05
+assembly6	asm10	21593	0	21593	92.19
+assembly7	asm10	20767	0	20767	90.06
+assembly8	asm10	20945	0	20945	90.69
+assembly9	asm10	18692	2	18694	92.43
+assembly10	asm10	21355	2	21357	91.20
+assembly11	asm5	1860	1	1861	96.16
+assembly12	asm5	1288	0	1288	95.34
+assembly13	asm10	21604	0	21604	91.64
